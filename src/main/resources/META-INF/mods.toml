@@ -1,0 +1,44 @@
+
+modLoader="javafml" #mandatory
+
+loaderVersion="[37,)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
+
+license="All rights reserved"
+
+[[mods]] #mandatory
+
+modId="lc" #mandatory
+
+version="1.17.1-1.0.0" #mandatory
+
+displayName="LolCraft heee heee" #mandatory
+
+logoFile="examplemod.png" #optional
+
+credits="Thanks to no one!" #optional
+
+authors="Josh Susak" #optional
+
+description='''
+The greatest Minecraft mod ever created.
+'''
+
+[[dependencies.examplemod]] #optional
+
+    modId="forge" #mandatory
+
+    mandatory=true #mandatory
+
+    versionRange="[37,)" #mandatory
+
+    ordering="NONE"
+
+    side="BOTH"
+
+[[dependencies.examplemod]]
+    modId="minecraft"
+    mandatory=true
+
+    versionRange="[1.17.1,1.18)"
+    ordering="NONE"
+    side="BOTH"

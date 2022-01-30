@@ -1,0 +1,14 @@
+{
+  "denzo_laugh": {
+    "subtitle": "lc.denzo_laugh",
+    "sounds": [
+      "lc:denzo_laugh"
+    ]
+  },
+  "smorez": {
+    "subtitle": "lc.smorez",
+    "sounds": [
+      "lc:smorez"
+    ]
+  }
+}

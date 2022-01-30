@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "lc:blocks/grandpa_yeager"
+  }
+}
