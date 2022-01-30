@@ -8,7 +8,7 @@ import net.minecraft.world.level.material.MaterialColor;
 public class TrollBlock extends Block {
 
     public TrollBlock() {
-        super(Block.Properties.of(Material.CACTUS)
+        super(Block.Properties.of(Material.CLAY)
                 .strength(6.0f, 10.0f)
                 .sound(SoundType.METAL)
                 .color(MaterialColor.COLOR_BLACK)
