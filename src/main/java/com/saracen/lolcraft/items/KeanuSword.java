@@ -35,6 +35,7 @@ public class KeanuSword extends SwordItem {
         super.appendHoverText(stack, worldIn, tooltip, flagIn);
     }
 
+
     @Override
     public InteractionResultHolder<ItemStack> use(Level world, Player player, InteractionHand hand) {
         BlockPos pPos = new BlockPos(player.getX(),player.getY(),player.getZ());

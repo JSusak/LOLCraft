@@ -10,5 +10,11 @@
     "sounds": [
       "lc:smorez"
     ]
+  },
+  "sheesh": {
+    "subtitle": "lc.sheesh",
+    "sounds": [
+      "lc:sheesh"
+    ]
   }
 }
