@@ -8,7 +8,10 @@ import net.minecraft.network.chat.TextComponent;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionResultHolder;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.projectile.Fireball;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.PickaxeItem;
 import net.minecraft.world.item.Tier;
@@ -36,13 +39,16 @@ public class PruthviPickaxe extends PickaxeItem  {
 
     @Override
     public InteractionResultHolder<ItemStack> use(Level world, Player player, InteractionHand hand) {
-        world.setSkyFlashTime(10);
         if(!world.isClientSide()) {
             if(hand==InteractionHand.MAIN_HAND) {
-                player.sendMessage(new TextComponent("I heckin love Tenz"), Util.NIL_UUID);
-
+                if (!player.getCooldowns().isOnCooldown(this))
+                    world.setSkyFlashTime(10);
+                    player.sendMessage(new TextComponent("I heckin love Tenz"), Util.NIL_UUID);
+                    player.addEffect(new MobEffectInstance(MobEffects.DIG_SPEED, 700, 5));
+                    player.addEffect(new MobEffectInstance(MobEffects.NIGHT_VISION, 700, 5));
+                    player.getCooldowns().addCooldown(this, 1500);
             }
-        }
+            }
         return super.use(world, player, hand);
     }
 }
