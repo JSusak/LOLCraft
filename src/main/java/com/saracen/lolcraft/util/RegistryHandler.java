@@ -7,6 +7,7 @@ import com.saracen.lolcraft.blocks.TrollBlock;
 import com.saracen.lolcraft.blocks.YeagerBlock;
 import com.saracen.lolcraft.items.ItemBase;
 import com.saracen.lolcraft.items.KeanuSword;
+import com.saracen.lolcraft.items.LeoAxe;
 import com.saracen.lolcraft.items.PruthviPickaxe;
 import com.saracen.lolcraft.tools.ModItemTier;
 import net.minecraft.resources.ResourceLocation;
@@ -15,6 +16,7 @@ import net.minecraft.world.item.*;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.model.pipeline.BlockInfo;
 import net.minecraftforge.common.extensions.IForgePackResources;
+import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fmllegacy.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
@@ -39,8 +41,9 @@ public class RegistryHandler {
     }
 
     // Items (All items use the ItemBase Class)
-    public static final RegistryObject<Item> KSWORD = ITEMS.register("keanu_sword", () -> new KeanuSword(ModItemTier.KEANUTIER, 90, 90f, new Item.Properties().tab(LolCraft.TAB)));
-    public static final RegistryObject<Item> P_PICKAXE = ITEMS.register("pruthvi_pickaxe", () -> new PruthviPickaxe(ModItemTier.PRUTHVITIER, 80, 80f, new Item.Properties().tab(LolCraft.TAB)));
+    public static final RegistryObject<Item> KSWORD = ITEMS.register("keanu_sword", () -> new KeanuSword(ModItemTier.KEANUTIER, 12, 12f, new Item.Properties().tab(LolCraft.TAB)));
+    public static final RegistryObject<Item> P_PICKAXE = ITEMS.register("pruthvi_pickaxe", () -> new PruthviPickaxe(ModItemTier.PRUTHVITIER, 10, 10f, new Item.Properties().tab(LolCraft.TAB)));
+    public static final RegistryObject<Item> L_BATTLEAXE = ITEMS.register("leo_axe", () -> new LeoAxe(ModItemTier.LEOTIER, 11, 11f, new Item.Properties().tab(LolCraft.TAB)));
 
     // Blocks (Make a new class for every new block)
     public static final RegistryObject<Block> KYEAGER_BLOCK = BLOCKS.register("grandpa_yeager", YeagerBlock::new);
