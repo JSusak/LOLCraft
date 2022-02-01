@@ -10,4 +10,6 @@ public class ModItemTier {
     public static final ForgeTier KEANUTIER = new ForgeTier(4,400,20f,10f, 15, Tags.Blocks.NEEDS_GOLD_TOOL, () -> Ingredient.EMPTY);
     public static final ForgeTier PRUTHVITIER = new ForgeTier(4,999,60f,1f, 15, Tags.Blocks.NEEDS_GOLD_TOOL, () -> Ingredient.EMPTY);
     public static final ForgeTier LEOTIER = new ForgeTier(4,500,10f,1f, 15, Tags.Blocks.NEEDS_GOLD_TOOL, () -> Ingredient.EMPTY);
+    public static final ForgeTier JOSHTIER = new ForgeTier(4,100,3f,7f, 15, Tags.Blocks.NEEDS_GOLD_TOOL, () -> Ingredient.EMPTY);
+    public static final ForgeTier DENIZTIER = new ForgeTier(4,300,13f,1f, 15, Tags.Blocks.NEEDS_GOLD_TOOL, () -> Ingredient.EMPTY);
 }
