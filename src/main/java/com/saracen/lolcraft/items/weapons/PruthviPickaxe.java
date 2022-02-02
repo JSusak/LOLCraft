@@ -46,7 +46,7 @@ public class PruthviPickaxe extends PickaxeItem  {
                 if (!player.getCooldowns().isOnCooldown(this))
                     world.setSkyFlashTime(10);
                 world.playSound(null, pPos, RegistryHandler.SHEESH_SOUND.get(), SoundSource.PLAYERS, 1, 1);
-                    player.sendMessage(new TextComponent("I heckin love Tenz"), Util.NIL_UUID);
+                    player.sendMessage(new TextComponent("I heckin love s0m"), Util.NIL_UUID);
                     player.addEffect(new MobEffectInstance(MobEffects.DIG_SPEED, 700, 5));
                     player.addEffect(new MobEffectInstance(MobEffects.NIGHT_VISION, 700, 5));
                     player.getCooldowns().addCooldown(this, 1500);

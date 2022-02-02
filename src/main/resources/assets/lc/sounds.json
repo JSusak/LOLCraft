@@ -16,5 +16,11 @@
     "sounds": [
       "lc:sheesh"
     ]
+  },
+  "burp": {
+    "subtitle": "lc.burp",
+    "sounds": [
+      "lc:burp"
+    ]
   }
 }

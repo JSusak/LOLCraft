@@ -10,16 +10,12 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.entity.LightningBolt;
-import net.minecraft.world.entity.animal.IronGolem;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.AxeItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
-import net.minecraftforge.event.entity.EntityStruckByLightningEvent;
 
 import javax.annotation.Nullable;
 import java.util.List;
@@ -32,7 +28,7 @@ public class LeoAxe extends AxeItem  {
 
     @Override
     public void appendHoverText(ItemStack stack, @Nullable Level worldIn, List<Component> tooltip, TooltipFlag flagIn) {
-        tooltip.add(new TextComponent("lolol"));
+        tooltip.add(new TextComponent("BUUUUUUUURRRRRRRRRRPPPPPPPP"));
 
         super.appendHoverText(stack, worldIn, tooltip, flagIn);
     }
@@ -45,8 +41,8 @@ public class LeoAxe extends AxeItem  {
             if(hand==InteractionHand.MAIN_HAND) {
                 if(!player.getCooldowns().isOnCooldown(this)) {
                     world.setSkyFlashTime(30);
-                    world.playSound(null, pPos, RegistryHandler.SMOREZ_SOUND.get(), SoundSource.PLAYERS, 1, 1);
-                    player.sendMessage(new TextComponent("Yeah, I know"), Util.NIL_UUID);
+                    world.playSound(null, pPos, RegistryHandler.BURP_SOUND.get(), SoundSource.PLAYERS, 1, 1);
+                    player.sendMessage(new TextComponent("BUUURRRPRPPPPPP"), Util.NIL_UUID);
                     //First parameter is duration, second is strength.
                     player.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 700, 5));
                     player.addEffect(new MobEffectInstance(MobEffects.GLOWING, 700, 5));

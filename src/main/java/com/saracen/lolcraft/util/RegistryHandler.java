@@ -55,6 +55,7 @@ public class RegistryHandler {
    public static final RegistryObject<SoundEvent> DENZO_SOUND = SOUND_EVENTS.register("denzo_laugh", () -> new SoundEvent(new ResourceLocation(LolCraft.MOD_ID,"denzo_laugh")));
     public static final RegistryObject<SoundEvent> SMOREZ_SOUND = SOUND_EVENTS.register("smorez", () -> new SoundEvent(new ResourceLocation(LolCraft.MOD_ID,"smorez")));
     public static final RegistryObject<SoundEvent> SHEESH_SOUND = SOUND_EVENTS.register("sheesh",() -> new SoundEvent(new ResourceLocation(LolCraft.MOD_ID,"sheesh")));
+    public static final RegistryObject<SoundEvent> BURP_SOUND = SOUND_EVENTS.register("burp",() -> new SoundEvent(new ResourceLocation(LolCraft.MOD_ID,"burp")));
 
 
 
