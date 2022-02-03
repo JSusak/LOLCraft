@@ -7,5 +7,9 @@
   "item.lc.deniz_scythe": "Denzo's Scythe",
   "block.lc.grandpa_yeager": "Grandpa Yeager",
   "block.lc.denzo_block": "Denzo Block",
-  "block.lc.troll_block": "Troll Block"
+  "block.lc.troll_block": "Troll Block",
+  "item.lc.willy_head": "Willy's Helmet",
+  "item.lc.willy_chest": "Willy's Chestplate",
+  "item.lc.willy_leggings": "Willy's Leggings",
+  "item.lc.willy_boots": "Willy's Boots"
 }

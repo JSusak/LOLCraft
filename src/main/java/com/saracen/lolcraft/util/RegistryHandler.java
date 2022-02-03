@@ -6,10 +6,12 @@ import com.saracen.lolcraft.blocks.DenzoBlock;
 import com.saracen.lolcraft.blocks.TrollBlock;
 import com.saracen.lolcraft.blocks.YeagerBlock;
 import com.saracen.lolcraft.items.weapons.*;
+import com.saracen.lolcraft.tools.ModArmorMaterial;
 import com.saracen.lolcraft.tools.ModItemTier;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -51,6 +53,12 @@ public class RegistryHandler {
     public static final RegistryObject<Item> KYEAGER_BLOCK_ITEM = ITEMS.register("grandpa_yeager", () -> new BlockItemBase(KYEAGER_BLOCK.get()));
     public static final RegistryObject<Item> DENZO_BLOCK_ITEM = ITEMS.register("denzo_block", () -> new BlockItemBase(DENZO_BLOCK.get()));
     public static final RegistryObject<Item> TROLL_BLOCK_ITEM = ITEMS.register("troll_block", () -> new BlockItemBase(TROLL_BLOCK.get()));
+
+    //Armor
+    public static final RegistryObject<Item> WILLY_HELMET = ITEMS.register("willy_head", () -> new ArmorItem(ModArmorMaterial.WILLY, EquipmentSlot.HEAD, new Item.Properties().tab(LolCraft.TAB)));
+    public static final RegistryObject<Item> WILLY_CHEST = ITEMS.register("willy_chest", () -> new ArmorItem(ModArmorMaterial.WILLY, EquipmentSlot.CHEST, new Item.Properties().tab(LolCraft.TAB)));
+    public static final RegistryObject<Item> WILLY_LEGGINGS = ITEMS.register("willy_leggings", () -> new ArmorItem(ModArmorMaterial.WILLY, EquipmentSlot.LEGS, new Item.Properties().tab(LolCraft.TAB)));
+    public static final RegistryObject<Item> WILLY_BOOTS = ITEMS.register("willy_boots", () -> new ArmorItem(ModArmorMaterial.WILLY, EquipmentSlot.FEET, new Item.Properties().tab(LolCraft.TAB)));
 
    public static final RegistryObject<SoundEvent> DENZO_SOUND = SOUND_EVENTS.register("denzo_laugh", () -> new SoundEvent(new ResourceLocation(LolCraft.MOD_ID,"denzo_laugh")));
     public static final RegistryObject<SoundEvent> SMOREZ_SOUND = SOUND_EVENTS.register("smorez", () -> new SoundEvent(new ResourceLocation(LolCraft.MOD_ID,"smorez")));
