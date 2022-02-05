@@ -60,6 +60,13 @@ public class RegistryHandler {
     public static final RegistryObject<Item> WILLY_LEGGINGS = ITEMS.register("willy_leggings", () -> new ArmorItem(ModArmorMaterial.WILLY, EquipmentSlot.LEGS, new Item.Properties().tab(LolCraft.TAB)));
     public static final RegistryObject<Item> WILLY_BOOTS = ITEMS.register("willy_boots", () -> new ArmorItem(ModArmorMaterial.WILLY, EquipmentSlot.FEET, new Item.Properties().tab(LolCraft.TAB)));
 
+    public static final RegistryObject<Item> PRUTHVI_HELMET = ITEMS.register("pruthvi_head", () -> new ArmorItem(ModArmorMaterial.PATEL, EquipmentSlot.HEAD, new Item.Properties().tab(LolCraft.TAB)));
+    public static final RegistryObject<Item> PRUTHVI_CHEST = ITEMS.register("pruthvi_chest", () -> new ArmorItem(ModArmorMaterial.PATEL, EquipmentSlot.CHEST, new Item.Properties().tab(LolCraft.TAB)));
+    public static final RegistryObject<Item> PRUTHVI_LEGGINGS = ITEMS.register("pruthvi_leggings", () -> new ArmorItem(ModArmorMaterial.PATEL, EquipmentSlot.LEGS, new Item.Properties().tab(LolCraft.TAB)));
+    public static final RegistryObject<Item> PRUTHVI_BOOTS = ITEMS.register("pruthvi_boots", () -> new ArmorItem(ModArmorMaterial.PATEL, EquipmentSlot.FEET, new Item.Properties().tab(LolCraft.TAB)));
+
+
+    //Sounds
    public static final RegistryObject<SoundEvent> DENZO_SOUND = SOUND_EVENTS.register("denzo_laugh", () -> new SoundEvent(new ResourceLocation(LolCraft.MOD_ID,"denzo_laugh")));
     public static final RegistryObject<SoundEvent> SMOREZ_SOUND = SOUND_EVENTS.register("smorez", () -> new SoundEvent(new ResourceLocation(LolCraft.MOD_ID,"smorez")));
     public static final RegistryObject<SoundEvent> SHEESH_SOUND = SOUND_EVENTS.register("sheesh",() -> new SoundEvent(new ResourceLocation(LolCraft.MOD_ID,"sheesh")));

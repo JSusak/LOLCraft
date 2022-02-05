@@ -17,7 +17,11 @@ import java.util.function.Supplier;
 public enum ModArmorMaterial implements ArmorMaterial {
     WILLY("willy", 33, new int[]{3, 6, 8, 3}, 10, SoundEvents.ARMOR_EQUIP_DIAMOND, 2.0F, 0.0F, () -> {
         return Ingredient.of(Items.DIAMOND);
+    }),
+    PATEL("patel",25,new int[]{2,4,6,8},9,SoundEvents.ARMOR_EQUIP_NETHERITE,1.0f,1.0f, () -> {
+        return Ingredient.of(Items.LAPIS_LAZULI);
     });
+
 
     private static final int[] HEALTH_PER_SLOT = new int[]{13, 15, 16, 11};
     private final String name;
