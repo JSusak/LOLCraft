@@ -8,6 +8,8 @@ import com.saracen.lolcraft.blocks.YeagerBlock;
 import com.saracen.lolcraft.items.weapons.*;
 import com.saracen.lolcraft.tools.ModArmorMaterial;
 import com.saracen.lolcraft.tools.ModItemTier;
+import com.saracen.lolcraft.tools.PruthviArmorItem;
+import com.saracen.lolcraft.tools.WilliamArmorItem;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.world.entity.EntityType;
@@ -37,7 +39,7 @@ public class RegistryHandler {
 
     }
 
-    // Items (All items use the ItemBase Class)
+    //Weapons
     public static final RegistryObject<Item> KSWORD = ITEMS.register("keanu_sword", () -> new KeanuSword(ModItemTier.KEANUTIER, 12, 12f, new Item.Properties().tab(LolCraft.TAB)));
     public static final RegistryObject<Item> P_PICKAXE = ITEMS.register("pruthvi_pickaxe", () -> new PruthviPickaxe(ModItemTier.PRUTHVITIER, 10, 10f, new Item.Properties().tab(LolCraft.TAB)));
     public static final RegistryObject<Item> L_BATTLEAXE = ITEMS.register("leo_axe", () -> new LeoAxe(ModItemTier.LEOTIER, 11, 11f, new Item.Properties().tab(LolCraft.TAB)));
@@ -55,15 +57,15 @@ public class RegistryHandler {
     public static final RegistryObject<Item> TROLL_BLOCK_ITEM = ITEMS.register("troll_block", () -> new BlockItemBase(TROLL_BLOCK.get()));
 
     //Armor
-    public static final RegistryObject<Item> WILLY_HELMET = ITEMS.register("willy_head", () -> new ArmorItem(ModArmorMaterial.WILLY, EquipmentSlot.HEAD, new Item.Properties().tab(LolCraft.TAB)));
-    public static final RegistryObject<Item> WILLY_CHEST = ITEMS.register("willy_chest", () -> new ArmorItem(ModArmorMaterial.WILLY, EquipmentSlot.CHEST, new Item.Properties().tab(LolCraft.TAB)));
-    public static final RegistryObject<Item> WILLY_LEGGINGS = ITEMS.register("willy_leggings", () -> new ArmorItem(ModArmorMaterial.WILLY, EquipmentSlot.LEGS, new Item.Properties().tab(LolCraft.TAB)));
-    public static final RegistryObject<Item> WILLY_BOOTS = ITEMS.register("willy_boots", () -> new ArmorItem(ModArmorMaterial.WILLY, EquipmentSlot.FEET, new Item.Properties().tab(LolCraft.TAB)));
+    public static final RegistryObject<Item> WILLY_HELMET = ITEMS.register("willy_head", () -> new WilliamArmorItem(ModArmorMaterial.WILLY, EquipmentSlot.HEAD, new Item.Properties().tab(LolCraft.TAB)));
+    public static final RegistryObject<Item> WILLY_CHEST = ITEMS.register("willy_chest", () -> new WilliamArmorItem(ModArmorMaterial.WILLY, EquipmentSlot.CHEST, new Item.Properties().tab(LolCraft.TAB)));
+    public static final RegistryObject<Item> WILLY_LEGGINGS = ITEMS.register("willy_leggings", () -> new WilliamArmorItem(ModArmorMaterial.WILLY, EquipmentSlot.LEGS, new Item.Properties().tab(LolCraft.TAB)));
+    public static final RegistryObject<Item> WILLY_BOOTS = ITEMS.register("willy_boots", () -> new WilliamArmorItem(ModArmorMaterial.WILLY, EquipmentSlot.FEET, new Item.Properties().tab(LolCraft.TAB)));
 
-    public static final RegistryObject<Item> PRUTHVI_HELMET = ITEMS.register("pruthvi_head", () -> new ArmorItem(ModArmorMaterial.PATEL, EquipmentSlot.HEAD, new Item.Properties().tab(LolCraft.TAB)));
-    public static final RegistryObject<Item> PRUTHVI_CHEST = ITEMS.register("pruthvi_chest", () -> new ArmorItem(ModArmorMaterial.PATEL, EquipmentSlot.CHEST, new Item.Properties().tab(LolCraft.TAB)));
-    public static final RegistryObject<Item> PRUTHVI_LEGGINGS = ITEMS.register("pruthvi_leggings", () -> new ArmorItem(ModArmorMaterial.PATEL, EquipmentSlot.LEGS, new Item.Properties().tab(LolCraft.TAB)));
-    public static final RegistryObject<Item> PRUTHVI_BOOTS = ITEMS.register("pruthvi_boots", () -> new ArmorItem(ModArmorMaterial.PATEL, EquipmentSlot.FEET, new Item.Properties().tab(LolCraft.TAB)));
+    public static final RegistryObject<Item> PRUTHVI_HELMET = ITEMS.register("pruthvi_head", () -> new PruthviArmorItem(ModArmorMaterial.PATEL, EquipmentSlot.HEAD, new Item.Properties().tab(LolCraft.TAB)));
+    public static final RegistryObject<Item> PRUTHVI_CHEST = ITEMS.register("pruthvi_chest", () -> new PruthviArmorItem(ModArmorMaterial.PATEL, EquipmentSlot.CHEST, new Item.Properties().tab(LolCraft.TAB)));
+    public static final RegistryObject<Item> PRUTHVI_LEGGINGS = ITEMS.register("pruthvi_leggings", () -> new PruthviArmorItem(ModArmorMaterial.PATEL, EquipmentSlot.LEGS, new Item.Properties().tab(LolCraft.TAB)));
+    public static final RegistryObject<Item> PRUTHVI_BOOTS = ITEMS.register("pruthvi_boots", () -> new PruthviArmorItem(ModArmorMaterial.PATEL, EquipmentSlot.FEET, new Item.Properties().tab(LolCraft.TAB)));
 
 
     //Sounds
